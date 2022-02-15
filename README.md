@@ -12,6 +12,22 @@
 - HTML
 - CSS
 - JavaScript
+- ES 6
+
+## Getting Started
+To get a local copy follow these simple steps.
+
+1.- Clone this project
+
+2.- Open the project directory in your terminal
+
+3.- In the terminal, install the project dependencies by running
+
+```
+npm install
+```
+4.- To see the home page open index.html with your browser.
+
 
 ## Live Demo
 

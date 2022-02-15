@@ -1,13 +1,12 @@
 import * as staticelements from './elements.js';
 
 class Book {
-    static booksList = [];
+  constructor(container) {
+    this.booksList = [];
+    this.container = container;
+  }
 
-    constructor(container) {
-      this.container = container;
-    }
-
-    generateBooks() {
+    generateBooks =() => {
       this.container.innerHTML = '';
       if (localStorage.getItem('books') != null) {
         this.booksList = JSON.parse(localStorage.getItem('books'));
@@ -39,12 +38,12 @@ class Book {
     localStorage.setItem('books', JSON.stringify(booksList));
   };
 
-  remove(index) {
+  remove = (index) => {
     this.booksList = this.booksList.filter((book, ind) => ind !== index);
     this.saveDataLocalStorage(this.booksList);
   }
 
-  addNewBook() {
+  addNewBook =() => {
     const title = staticelements.title.value;
     const author = staticelements.author.value;
     if (title === '' || author === '') {
