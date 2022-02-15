@@ -21,7 +21,7 @@ To get a local copy follow these simple steps.
 
 2.- Open the project directory in your terminal
 
-3.- In the terminal, install the project dependencies by running
+3.- In the terminal, install the project dependencies by running bellow command
 
 ```
 npm install
